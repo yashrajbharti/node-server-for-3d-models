@@ -63,7 +63,7 @@ const PORT = process.env.PORT;
 const DOMAIN = process.env.DOMAIN;
 
 app.listen(PORT || 3000, () => {
-  console.log('Server Started at http://' + DOMAIN + ':' + PORT);
+  console.log('Server Started at https://' + DOMAIN + ':' + PORT);
 });
 
 
