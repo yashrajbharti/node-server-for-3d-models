@@ -4,7 +4,7 @@ const directory = path.join(__dirname, '..', 'uploads');
 const fs = require('fs')
 const DOMAIN = process.env.DOMAIN;
 const PORT = process.env.PORT;
-const BASEURL = 'http://' + DOMAIN + ':' + PORT + '/' + 'files/'
+const BASEURL = 'https://' + DOMAIN + ':' + PORT + '/' + 'files/'
 const { uploadFile, uploadFiles } = require('../upload.js');
 
 const router = express.Router();
