@@ -1,6 +1,6 @@
 const util = require("util");
 const multer = require("multer");
-const maxSize = 2 * 1024 * 1024;
+const maxSize = 10 * 1024 * 1024;
 const path = require("path");
 const directory = path.join(__dirname, 'uploads');
 
@@ -10,7 +10,7 @@ let storage = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     const [name, extension] = file.originalname.split('.')
-    cb(null, `targets.${extension}`);
+    cb(null, `scene.${extension}`);
   },
 });
 
