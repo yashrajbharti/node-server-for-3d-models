@@ -1,4 +1,4 @@
-# Node.js server to upload the models
+# Node.js server for 3D web viewer
 ```
  cd /to/file/path
  npm install
